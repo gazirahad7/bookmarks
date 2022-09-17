@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import {
-  addDoc, collection, deleteDoc, getDoc, getDocs, updateDoc
+  addDoc, collection, deleteDoc, getDoc, getDocs, updateDoc,
 } from 'firebase/firestore';
 import { db } from '../firebase';
 

@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import './App.css';
 import BookmarksList from './components/BookmarksList';
 import GlobalStyles from './components/styles/Global.styles';

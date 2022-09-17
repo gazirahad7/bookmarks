@@ -1,13 +1,13 @@
 /* eslint-disable react/jsx-key */
 import React, { useEffect, useState } from 'react';
-
 import { ReactComponent as Add } from '../assets/icons/add.svg';
 import { ReactComponent as Facebook } from '../assets/icons/facebook.svg';
 import BookmarksServices from '../services/bookmarks.services';
-
 import Searchbar from './Searchbar';
 import { CollationContainer } from './styles/Containers.styles';
 import { SideBarIcon, SideBarLi } from './styles/Elements.styles';
+
+import Model from './Model';
 
 export default function BookmarksList() {
   const [bookmarks, setBookmarks] = useState([]);
@@ -23,6 +23,7 @@ export default function BookmarksList() {
       <div className="main-container">
 
         <Searchbar />
+        <Model />
         Bookmark list
         <CollationContainer>
 
