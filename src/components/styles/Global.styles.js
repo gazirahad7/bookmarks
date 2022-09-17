@@ -208,12 +208,42 @@ body.dark  header .toggle {
   margin: 0 auto;
   outline: none;
   transform: scale(1.2);
-
- 
-
-
 }
 
+/* ====== Model style ====== */
+
+.model-overlay{
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 10;
+ 
+}
+.model-container{
+  width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background-color: var(--sidebar-color);
+  z-index: 100;
+  padding: 20px;
+  border-radius: 10px;
+  /* box-shadow: 0  8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+.model-close{
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 5px;
+  transition: var(--tran-03);
+  border: none;
+  z-index: 100;
+}
 `;
 
 export default GlobalStyles;
