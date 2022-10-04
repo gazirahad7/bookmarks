@@ -11,6 +11,12 @@ export const SideBarLi = styled.li`
   display: flex;
   align-items: center;
   margin-top: 10px;
+  position: relative;
+
+  &:hover  .action-btn{
+    opacity: 1;
+  }
+
   `;
 
 export const SideBarIcon = styled.span`
@@ -23,4 +29,14 @@ export const SideBarIcon = styled.span`
   font-size: 20px;
   color: var(--text-color);
   transition: var(--tran-03);
+`;
+
+export const Label = styled.label`
+
+  font-size: 16px;
+  font-weight: 500;
+  list-style: none;
+  height: 100%;
+  background-color: transparent;
+  padding: 6px 0px;
 `;
