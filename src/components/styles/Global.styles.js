@@ -33,11 +33,21 @@ body {
   background-color: var(--body-color);
   transition: var(--tran-05);
 }
+button {
+  cursor: pointer;
+  transition: var(--tran-05);
+  border: none;
+  background-color: transparent;
+}
 .logo-cont{
   display: flex;
   align-items: center;
   gap: 10px;
   
+}
+a{
+  text-decoration: none;
+  color: var(--text-color);
 }
 /* .logo-text {
   display: flex;
@@ -157,7 +167,7 @@ body.dark  header .toggle {
 /* ====== searchbar css ====== */
 .searchbar {
   position: relative;
-  width: 80%;
+  width: 71%;
   height: 50px;
   margin: 0 auto;
   margin: 10% auto;
@@ -186,7 +196,19 @@ body.dark  header .toggle {
   font-size: 20px;
   color: var(--text-color);
   transition: var(--tran-03);
+
+.search-cont{
+  position: relative;
 }
+
+}
+.add-icon{
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  bottom: 0;
+}
+
 .searchbar input:focus ~ .search-icon {
   color: var(--primary-color);
 }
@@ -236,14 +258,91 @@ body.dark  header .toggle {
   position: absolute;
   top: 8px;
   right: 8px;
-
   cursor: pointer;
   padding: 5px;
   border-radius: 5px;
-  transition: var(--tran-03);
   border: none;
   z-index: 100;
+  background-color: transparent;
 }
+
+
+/* ====== From style ====== */
+
+.add-list-cont{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+
+.add-list-cont input, select{
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--toggle-color);
+  border-radius: 6px;
+  padding: 0 20px;
+  margin: 4px 0px;
+  font-size: 18px;
+  color: var(--text-color);
+  transition: var(--tran-03);
+}
+
+.add-list-cont input:focus, select:focus{
+  outline: none;
+  border: 1px solid var(--primary-color);
+}
+.ctm-focus:focus{
+  margin: 4px 0px;
+  outline: none;
+  border: 1px solid var(--primary-color) !important;
+}
+.add-list-cont input::placeholder, select::placeholder{
+  color: var(--text-color);
+  font-size: 16px;
+}
+.add-list-cont .btn{
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 6px;
+  padding: 0 20px;
+  font-size: 18px;
+  color: #000;
+  transition: var(--tran-03);
+  background-color: var(--primary-color);
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+
+}
+
+.tagify{
+  border-radius: 5px;
+}
+.tagify.tagify--focus, .tagify__dropdown, .tagify__input::before{
+
+  border-color:  var(--primary-color) !important;
+}
+
+
+.action-btn{
+  position: absolute;
+  top:  15%;
+  right: -5px;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: var(--tran-03);
+  z-index: 100;
+  opacity: 0;
+}
+
 `;
 
 export default GlobalStyles;
