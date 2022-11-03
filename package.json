@@ -12,13 +12,14 @@
     "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
   },
   "dependencies": {
-    "@meltwater/fetch-favicon": "^1.0.4",
     "@yaireo/tagify": "3.2.2",
     "firebase": "^9.9.4",
     "react": "^18.2.0",
+    "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.4.1",
+    "react-toastify": "^9.0.8",
     "styled-components": "^5.3.5",
     "vite-plugin-svgr": "^2.2.1"
   },
