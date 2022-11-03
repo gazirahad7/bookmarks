@@ -16,8 +16,9 @@ const GlobalStyles = createGlobalStyle`
   /* ===== Colors ===== */
   --body-color: #e4e9f7;
   --sidebar-color: #fff;
-  --primary-color: #695cfe;
-  --primary-color-light: #f6f5ff;
+  --primary-color: #2c3e50;
+/*   --primary-color: #695cfe; */ 
+ --primary-color-light: #f6f5ff;
   --toggle-color: #ddd;
   --text-color: #707070;
 
@@ -274,6 +275,7 @@ body.dark  header .toggle {
   flex-direction: column;
   gap: 15px;
   margin-top: 20px;
+  z-index: 99 !important;
 }
 
 
@@ -309,7 +311,7 @@ body.dark  header .toggle {
   border-radius: 6px;
   padding: 0 20px;
   font-size: 18px;
-  color: #000;
+  color: #fff;
   transition: var(--tran-03);
   background-color: var(--primary-color);
   cursor: pointer;
@@ -325,22 +327,63 @@ body.dark  header .toggle {
 
   border-color:  var(--primary-color) !important;
 }
-
+.bookmark-el{
+  position: relative;
+}
 
 .action-btn{
   position: absolute;
-  top:  15%;
+  top:  10%;
   right: -5px;
   font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 3px;
   cursor: pointer;
   transition: var(--tran-03);
-  z-index: 100;
-  opacity: 0;
+  /* opacity: 0; */
+}
+.action-icon{
+  color: var(--text-color);
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+  transition: var(--tran-03);
+}
+.bookmark-el:hover .action-btn{
+  opacity: 1;
+}
+.bookmark-el:hover  .action-btn .action-icon:hover{
+  box-shadow: 0 0 5px 0 rgba(0,0,0,0.2), 0 0 10px 0 rgba(0,0,0,0.19);
+  fill: var(--primary-color);
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  
+  .main-container{
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .model-container{
+    width: 350px;
+    margin: 0 auto;
+
+  }
+
+}
+@media screen and (max-width: 500px) {
+  
+
+  .model-container{
+    width: 300px;
+    margin: 0 auto;
+
+  }
+
 }
 
 `;

@@ -14,7 +14,7 @@ export const BookmarksReducer = (state, action) => {
     case 'ADD_BOOKMARKS':
 
       return {
-        bookmarks: [...state.bookmarks, action.payload],
+        bookmarks: [action.payload, ...state.bookmarks],
       };
 
     default:

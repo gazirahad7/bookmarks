@@ -12,11 +12,6 @@ export const SideBarLi = styled.li`
   align-items: center;
   margin-top: 10px;
   position: relative;
-
-  &:hover  .action-btn{
-    opacity: 1;
-  }
-
   `;
 
 export const SideBarIcon = styled.span`
