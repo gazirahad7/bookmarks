@@ -1,6 +1,6 @@
 /* eslint-disable class-methods-use-this */
 import {
-  addDoc, collection, deleteDoc, getDoc, getDocs, updateDoc
+  addDoc, collection, deleteDoc, doc, getDoc, getDocs, query, updateDoc, where
 } from 'firebase/firestore';
 import { db } from '../firebase';
 
@@ -12,13 +12,28 @@ class BookmarksServices {
   addList = (list) => addDoc(bookmarksCollectionRef, list);
 
   updateList = (id, list) => {
-    const listRef = getDoc(collection(db, 'bookmarks', id));
-    return updateDoc(listRef, list);
+    const ListRef = doc(db, 'bookmarks', id);
+    return updateDoc(ListRef, list);
   };
 
-  deleteList = (id) => deleteDoc(collection(db, 'bookmarks', id));
+  singleList = (id) => {
+    const bookmarks = doc(db, 'bookmarks', id);
+    return getDoc(bookmarks);
+  };
 
-  searchList = (searchTerm) => getDocs(bookmarksCollectionRef.where('title', '==', searchTerm));
+  // deleteList = (id) => deleteDoc(collection(db, 'bookmarks', id));
+
+  deleteList = (id) => {
+    const bookmarks = doc(db, 'bookmarks', id);
+    return deleteDoc(bookmarks);
+  };
+
+  searchList = (searchTerm) => {
+    const q = query(bookmarksCollectionRef, where('title', '==', searchTerm));
+    console.log(q);
+
+    return getDocs(q);
+  };
 }
 
 export default new BookmarksServices();
