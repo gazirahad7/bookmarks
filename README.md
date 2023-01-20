@@ -74,7 +74,8 @@ A brief description of what this project does and who it's for
 
 
 - Figma to React:
-![image](https://user-images.githubusercontent.com/65822873/213731791-9f2b1681-73ba-42f2-88f8-c7a1d7dd89e7.png)
+![image](https://user-images.githubusercontent.com/65822873/213734367-1957818f-2724-490d-9ae4-8f6a7b251a5f.png)
+
 
 - Add new bookmark:
 ![image](https://user-images.githubusercontent.com/65822873/213731979-2e40f271-e29a-48cf-94ab-b017ddd74d90.png)
