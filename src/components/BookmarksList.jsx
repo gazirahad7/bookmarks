@@ -28,8 +28,9 @@ export default function BookmarksList() {
     toast.success('Deleted successfully');
     getBookmarks();
   };
-  const [searchItem, setSearchItem] = React.useState('');
+  const [searchItem, setSearchItem] = React.useState([]);
   const handleSearch = (data) => {
+    console.log('search data from BookmarksList', data);
     setSearchItem(data);
 
     const isSearchData = bookmarks.filter((item) => item.title.toLowerCase().includes(searchItem.toLowerCase().trim()
