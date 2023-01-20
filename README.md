@@ -6,8 +6,6 @@ A brief description of what this project does and who it's for
 ## Project Summary
 
 
-
-
 ### INTRODUCTION
 
 - Every day we browse lots of websites on google, some common websites that need to every time.
@@ -34,6 +32,8 @@ A brief description of what this project does and who it's for
 
 
 ### SYSTEM ARCHITECTURE 
+
+![image](https://user-images.githubusercontent.com/65822873/213733925-b905a93f-47a8-4510-8763-e73ea4bee568.png)
 
 
 ### TECHNOLOGYS
