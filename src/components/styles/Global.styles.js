@@ -362,6 +362,41 @@ body.dark  header .toggle {
 }
 
 
+.dropdown {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  z-index: 999;
+  position: relative;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+
+}
+
+.dropdown:empty {
+  border: none;
+}
+
+
+.dropdown-item {
+  cursor: pointer;
+  text-align: start;
+  padding:  10px;
+  transition: var(--tran-03);
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--toggle-color);
+  border-radius: 5px;
+
+}
+.dropdown-item:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+
+
 @media screen and (max-width: 768px) {
   
   .main-container{
