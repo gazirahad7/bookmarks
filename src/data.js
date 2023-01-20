@@ -18,6 +18,7 @@ export const categorySuggestions = [
 ];
 
 export const tagsSuggestions = [
+  'dev',
   'javascript',
   'react',
   'node',
@@ -41,7 +42,6 @@ export const tagsSuggestions = [
   'netlify',
   'vercel',
   'git',
-  'github',
   'gitlab',
   'bitbucket',
   'docker',
@@ -60,4 +60,19 @@ export const tagsSuggestions = [
   'android',
   'ios',
   'linux',
+  'facebook',
+  'youtube',
+  'linkedin',
+  'twitter',
+  'instagram',
+  'github',
+  'stackoverflow',
+  'medium',
+  'dev',
+  'codepen',
+  'hackerrank',
+  'hackerearth',
+  'leetcode',
+  'geeksforgeeks',
+  'codechef',
 ];
