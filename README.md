@@ -98,7 +98,7 @@ A brief description of what this project does and who it's for
 
 
 
-### Topices Covered
+### Topics Covered
 
 - REACT
 - Firebase
